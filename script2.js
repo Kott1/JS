@@ -54,27 +54,22 @@
 // 5-е задание--|
 
 // function sum(a, b) {
-//     c = a + b;
-//     console.log(c);
-//     return;
+//     return console.log(c = a + b);
 // }
 
 // function sub(a, b) {
-//     c = a - b;
-//     console.log(c);
-//     return;
+//     return console.log(c = a - b);
 // }
 
 // function mult(a, b) {
-//     c = a * b;
-//     console.log(c);
-//     return;
+//     return console.log(c = a * b);
+
 // }
 
 // function div(a, b) {
-//     c = a / b;
-//     console.log(c);
-//     return;
+//     if (b != 0)
+//         return console.log(c = a / b);
+//     return console.log(0);
 // }
 
 // sum(-2, 5);
@@ -83,6 +78,10 @@
 // div(5, 2);
 
 // 6-е задание--|
+
+// arg1 = +prompt("Введите число:");
+// arg2 = +prompt("Введите число:");
+// operation = prompt("Введите арифметический знак :(+, -, *, /)")
 
 // function sum(a, b) {
 //     return a + b;
@@ -102,26 +101,33 @@
 // function mathOperation(arg1, arg2, operation) {
 //     switch (operation) {
 //         case '+':
-//             return sum(arg1, arg2);
+//             return alert(sum(arg1, arg2));
 
 //         case '-':
-//             return sub(arg1, arg2);
+//             return alert(sub(arg1, arg2));
 
 //         case '*':
-//             return mult(arg1, arg2);
+//             return alert(mult(arg1, arg2));
 
 //         case '/':
-//             return div(arg1, arg2);
+//             return alert(div(arg1, arg2));
 
 //         default:
 //             return "Неизвестный знак";
 //     }
 
 // }
-// mathOperation(5, 2, prompt("Введите арифметический знак :"));
+// mathOperation(arg1, arg2, operation);
 
 // 7-е задание--|
 
 // var a = null, b = 0;
 
-// console.log(a == b);//false, так как переменная (а) - объект, а переменная (b) - число.
+// console.log(a == b);//false
+// console.log(a != b);//true
+// console.log(a > b);//false
+// console.log(a < b);//false
+// console.log(a <= b);//true
+// console.log(a >= b);//true
+
+
