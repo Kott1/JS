@@ -10,7 +10,7 @@
 // }
 
 // function check(num) {
-//     var b = 2;
+//     var b = 2; 
 //     while (b < num / 2) {
 //         if (num % b == 0) {
 //             return false;
