@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>eShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="card-wrp">
+    <div class="card">
+      <img src="images/shirt.jpg" alt="">
+      <p>150</p>
+      <button onclick="addToCart(this.id)" id="shirt" class="card__txt">Add to cart</button>
+    </div>
+    <div class="card">
+      <img src="images/socks.jpg" alt="">
+      <p>50</p>
+      <button onclick="addToCart(this.id)" id="socks" class="card__txt">Add to cart</button>
+    </div>
+    <div class="card">
+      <img src="images/jacket.jpg" id="jacket" alt="">
+      <p>350</p>
+      <button onclick="addToCart(this.id)" id="jacket" class="card__txt">Add to cart</button>
+    </div>
+    <div class="card">
+      <img src="images/shoes.jpg" alt="">
+      <p>250</p>
+      <button onclick="addToCart(this.id)" id="shoes" class="card__txt">Add to cart</button>
+    </div>
+  </div>
+  <div class="cart"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
