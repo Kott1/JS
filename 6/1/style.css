@@ -1,0 +1,9 @@
+.small {
+    display: flex;
+    justify-content: space-around;
+}
+
+.big {
+    display: flex;
+    justify-content: center;
+}
