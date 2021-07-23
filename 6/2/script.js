@@ -24,6 +24,10 @@ var socks = {
 
 var goods = [jacket, shirt, shoes, socks];
 var sum = 0;
+cartWrp = document.querySelector(".cart_wrp");
+var pSum = document.createElement("p");
+pSum.textContent = "Сума: ";
+cartWrp.appendChild(pSum);
 
 function renderItems() {
     var i, itemBlock;
@@ -62,7 +66,6 @@ function addToCart(e) {
     var button = e.target;
     var id = button.id.split("_")[1];
     var selectedItem = goods[id];
-    cartWrp = document.querySelector(".cart_wrp");
     //div
     var cartBlock = document.createElement("div");
     //info
@@ -70,9 +73,9 @@ function addToCart(e) {
     cartInfo.textContent = selectedItem.name + " " + selectedItem.price;
     cartBlock.appendChild(cartInfo);
     cartWrp.appendChild(cartBlock);
-
-    cartWrp.appendChild(document.createTextNode("    " + selectedItem.price));
+    //sum
+    sum += selectedItem.price;
+    pSum.textContent = "Сумма: " + sum;
 }
-
 
 window.onload = renderItems();
